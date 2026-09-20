@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.VideoDownloader" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_blue</item>
+        <item name="colorPrimaryDark">@color/brand_blue_dark</item>
+        <item name="colorAccent">@color/brand_blue</item>
+        <item name="android:windowBackground">@color/bg_page</item>
+        <item name="android:statusBarColor">@color/bg_page</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
