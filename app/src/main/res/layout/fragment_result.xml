@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_page"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="120dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Video Downloader"
+            android:textColor="@color/brand_blue"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="Download videos without watermark"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <FrameLayout
+                    android:layout_width="110dp"
+                    android:layout_height="140dp">
+
+                    <ImageView
+                        android:id="@+id/ivThumbnail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="#DDDDDD"
+                        android:src="@drawable/ic_download_white"/>
+
+                    <ProgressBar
+                        android:id="@+id/pbThumb"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:indeterminateTint="@color/brand_blue"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="Loading..."
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:maxLines="4"
+                        android:text=""
+                        android:textColor="@color/text_secondary"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMp4One"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_blue_button"
+            android:drawableStart="@drawable/ic_download_white"
+            android:drawablePadding="14dp"
+            android:gravity="center"
+            android:paddingHorizontal="24dp"
+            android:text="Download MP4 [1] 360p"
+            android:textAllCaps="false"
+            android:textColor="@color/text_white"
+            android:textSize="17sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMp4Two"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_blue_button"
+            android:drawableStart="@drawable/ic_download_white"
+            android:drawablePadding="14dp"
+            android:gravity="center"
+            android:paddingHorizontal="24dp"
+            android:text="Download MP4 [2] 480p"
+            android:textAllCaps="false"
+            android:textColor="@color/text_white"
+            android:textSize="17sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMp4Hd"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_blue_button"
+            android:drawableStart="@drawable/ic_download_white"
+            android:drawablePadding="14dp"
+            android:gravity="center"
+            android:paddingHorizontal="24dp"
+            android:text="Download MP4 HD"
+            android:textAllCaps="false"
+            android:textColor="@color/text_white"
+            android:textSize="17sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMp3"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_blue_button"
+            android:drawableStart="@drawable/ic_download_white"
+            android:drawablePadding="14dp"
+            android:gravity="center"
+            android:paddingHorizontal="24dp"
+            android:text="Download MP3"
+            android:textAllCaps="false"
+            android:textColor="@color/text_white"
+            android:textSize="17sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMore"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_dark_btn"
+            android:text="Download more videos"
+            android:textAllCaps="false"
+            android:textColor="@color/text_white"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:id="@+id/progressArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:max="100"
+                android:progressTint="@color/brand_blue"
+                android:progressBackgroundTint="@color/divider"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="0%"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
